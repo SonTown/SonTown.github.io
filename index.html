@@ -1,132 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Personal website for Son Town with profile, work highlights, resume, and contact links."
+      content="서울대학교 학부생 Minhy eok Son의 게임 개발 중심 개인 웹사이트입니다."
     />
-    <title>Son Town | Personal Website</title>
+    <title>Minhy eok Son | Game Programmer</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main">본문으로 바로가기</a>
 
     <header class="site-header">
-      <nav class="nav" aria-label="Primary navigation">
-        <a class="logo" href="#top" aria-label="Son Town home">ST</a>
+      <nav class="nav" aria-label="주요 메뉴">
+        <a class="wordmark" href="#top" aria-label="Minhy eok Son home">MS</a>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#resume">Resume</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#cv">CV</a></li>
+          <li><a href="#courses">Courses</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main id="main">
-      <section class="hero" id="top" aria-labelledby="intro-heading">
-        <div class="hero-content">
-          <p class="eyebrow">Personal website</p>
-          <h1 id="intro-heading">Hi, I am Son Town.</h1>
-          <p class="intro">
-            I build practical, human-centered digital work and use this space to
-            share projects, experience, and ways to get in touch.
+      <section class="hero band-dark" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Seoul National University · Game Programmer</p>
+          <h1 id="hero-title">Minhy eok Son</h1>
+          <p class="hero-text">
+            게임 개발과 시스템 설계에 관심을 두고, LLM에게 명확한 방침을
+            제시해 효율적이고 확장 가능한 개발 흐름을 실험하고 있습니다.
           </p>
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="assets/cv.pdf">View CV</a>
-            <a class="button secondary" href="#contact">Contact me</a>
+          <div class="hero-actions" aria-label="주요 행동">
+            <a class="button button-light" href="assets/cv.pdf">Download CV</a>
+            <a class="button button-outline-dark" href="#projects">View Projects</a>
           </div>
         </div>
-        <figure class="profile-card">
+        <figure class="profile-frame">
           <img
             src="assets/profile.png"
-            alt="Portrait of Son Town"
+            alt="Minhy eok Son 프로필 사진"
             width="640"
             height="640"
           />
         </figure>
       </section>
 
-      <section class="section" id="about" aria-labelledby="about-heading">
-        <div class="section-heading">
-          <p class="eyebrow">About</p>
-          <h2 id="about-heading">Focused on clear, useful work.</h2>
+      <section class="section band-light" id="about" aria-labelledby="about-title">
+        <div class="section-label">
+          <p class="eyebrow dark">About Me</p>
+          <h2 id="about-title">AI 시대의 게임 개발 방식을 탐구합니다.</h2>
         </div>
-        <div class="section-body">
+        <div class="section-content">
           <p>
-            This site is a simple home base for my professional profile. It is
-            designed to load quickly, work well on phones and desktops, and be
-            easy to maintain through GitHub Pages.
+            현재 서울대학교 학부생으로, 게임 개발 분야에 관심을 갖고 여러
+            활동과 개인 프로젝트를 진행하고 있습니다. 플레이어가 직접 설계할 수
+            있는 AI 시스템, 대량 객체 처리를 위한 ECS 구조, 2D 액션 및 디펜스
+            게임 기획과 구현을 중심으로 경험을 쌓고 있습니다. 전공은 Computer
+            Science & Engineering이며, 게임 프로그래밍과 AI 기반 개발 흐름을
+            중심으로 역량을 확장하고 있습니다.
           </p>
-          <p>
-            Update this section with your background, interests, research,
-            teaching, engineering, design, or other work that best represents
-            you.
-          </p>
+          <div class="stats-grid" aria-label="프로필 요약">
+            <div>
+              <span class="stat-value">SNU</span>
+              <span class="stat-label">Undergraduate student</span>
+            </div>
+            <div>
+              <span class="stat-value">Major</span>
+              <span class="stat-label">Computer Science & Engineering</span>
+            </div>
+            <div>
+              <span class="stat-value">Tools</span>
+              <span class="stat-label">Unity, Blender</span>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="section" id="work" aria-labelledby="work-heading">
-        <div class="section-heading">
-          <p class="eyebrow">Work</p>
-          <h2 id="work-heading">Selected highlights</h2>
+      <section
+        class="section band-dark project-section"
+        id="projects"
+        aria-labelledby="projects-title"
+      >
+        <div class="section-label">
+          <p class="eyebrow">Projects</p>
+          <h2 id="projects-title">Selected game systems and prototypes.</h2>
         </div>
         <div class="project-grid">
-          <article class="project">
-            <h3>Project One</h3>
+          <article class="project-card featured">
+            <p class="tag">Self Project · Mar 2025 - Jul 2025</p>
+            <h3>AI 설계 게임</h3>
             <p>
-              Briefly describe a project, publication, role, or initiative and
-              the outcome it created.
+              노드 단위로 분리해 자유롭게 그래프를 수정할 수 있는 AI modifying
+              방식을 실험했습니다. Behavior Tree 기반 구조로 직관적인 제작
+              흐름과 효과적인 데이터 구조 설계에 집중했습니다.
             </p>
           </article>
-          <article class="project">
-            <h3>Project Two</h3>
+          <article class="project-card">
+            <p class="tag">Self Project · Aug 2024 - Dec 2024</p>
+            <h3>ECS Toy Project</h3>
             <p>
-              Add a second highlight that shows your skills, collaborators, or
-              the kind of problems you enjoy solving.
+              대량의 객체를 다룰 수 있는 ECS system으로 디펜스 게임을
+              구현했습니다. 노트북 환경에서 5만 개 이상의 객체 처리를 확인하고,
+              동시성 문제가 쉬운 환경에서 적 밀집도를 낮추는 방식을 탐구했습니다.
             </p>
           </article>
-          <article class="project">
-            <h3>Project Three</h3>
+          <article class="project-card">
+            <p class="tag">NDM · Dec 2025 - Feb 2026</p>
+            <h3>검위변주</h3>
             <p>
-              Use this space for a recent achievement, portfolio item, or area
-              of expertise.
+              횡스크롤 기반 2D 플랫포머 액션 게임입니다. 위치 변환이라는 핵심
+              기믹과 적 AI를 기획하고, 프로토타입 제작 및 개발을 담당했습니다.
+            </p>
+          </article>
+          <article class="project-card">
+            <p class="tag">NDM / UPnL · Dec 2025 - Present</p>
+            <h3>Necrosanctum</h3>
+            <p>
+              네크로맨서를 핵심으로 하는 2D 전투 게임입니다. 전투 메커니즘
+              기획과 개발을 맡고 있으며, 최근에는 AI를 활용한 모델링 도입도
+              시도하고 있습니다.
             </p>
           </article>
         </div>
       </section>
 
-      <section class="section resume" id="resume" aria-labelledby="resume-heading">
-        <div class="section-heading">
-          <p class="eyebrow">Resume</p>
-          <h2 id="resume-heading">Download my CV.</h2>
+      <section class="section band-light" id="cv" aria-labelledby="cv-title">
+        <div class="section-label">
+          <p class="eyebrow dark">CV & Experience</p>
+          <h2 id="cv-title">Education, experience, and skills.</h2>
         </div>
-        <div class="section-body">
-          <p>
-            For education, experience, publications, and additional details,
-            view or download the full CV.
-          </p>
-          <a class="button primary" href="assets/cv.pdf">Open CV PDF</a>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="date">Mar 2025 - Present</span>
+            <h3>Seoul National University</h3>
+            <p>Undergraduate student</p>
+          </article>
+          <article class="timeline-item">
+            <span class="date">Mar 2025 - Present</span>
+            <h3>UPnL · Programmer</h3>
+            <p>
+              플레이어가 직접 설계할 수 있는 AI 시스템을 설계하고 프로토타입을
+              구현했습니다. 정회원으로서 신입회원 세미나도 진행했습니다.
+            </p>
+          </article>
+          <article class="timeline-item">
+            <span class="date">Dec 2025 - Feb 2026</span>
+            <h3>Nexon Dream Members · Programmer & Game Designer</h3>
+            <p>
+              검위변주와 Necrosanctum 프로젝트에 참여했으며, 핵심 기획 제안과
+              프로그래밍을 담당했습니다.
+            </p>
+          </article>
+          <div class="skill-row" aria-label="기술 스택">
+            <span>Unity</span>
+            <span>Blender</span>
+            <span>Game AI</span>
+            <span>Behavior Tree</span>
+            <span>ECS</span>
+          </div>
+          <a class="button button-dark" href="assets/cv.pdf">Open CV PDF</a>
         </div>
       </section>
 
-      <section class="section" id="contact" aria-labelledby="contact-heading">
-        <div class="section-heading">
+      <section
+        class="section band-light soft-band"
+        id="courses"
+        aria-labelledby="courses-title"
+      >
+        <div class="section-label">
+          <p class="eyebrow dark">Planned Courses</p>
+          <h2 id="courses-title">Courses I plan to take.</h2>
+        </div>
+        <div class="course-grid">
+          <article>
+            <h3>Game AI</h3>
+            <p>AI behavior design, decision systems, and game agent structure.</p>
+          </article>
+          <article>
+            <h3>Computer Graphics</h3>
+            <p>Rendering, visual pipelines, and stronger foundations for game visuals.</p>
+          </article>
+          <article>
+            <h3>Data Structures & Algorithms</h3>
+            <p>Efficient structures for large-scale object and gameplay systems.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section band-dark" id="contact" aria-labelledby="contact-title">
+        <div class="section-label">
           <p class="eyebrow">Contact</p>
-          <h2 id="contact-heading">Let us connect.</h2>
+          <h2 id="contact-title">Let us build something playable.</h2>
         </div>
-        <address class="contact-list">
-          <a href="mailto:hello@example.com">hello@example.com</a>
-          <a href="https://github.com/SonTown">GitHub</a>
-          <a href="https://www.linkedin.com/">LinkedIn</a>
-        </address>
+        <div class="contact-panel">
+          <address class="contact-list">
+            <a href="mailto:newbiecoder@snu.ac.kr">newbiecoder@snu.ac.kr</a>
+            <a href="https://github.com/SonTown">github.com/SonTown</a>
+          </address>
+          <div class="ai-usage" aria-labelledby="ai-usage-title">
+            <p class="tag">AI Usage Requirement</p>
+            <h3 id="ai-usage-title">AI Usage</h3>
+            <p>
+              Tool: Codex<br />
+              Prompt: Read DESIGN.md, review the assignment PDF and my CV, then
+              rebuild this GitHub Pages personal website with accessible,
+              responsive content.
+            </p>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; <span id="year">2026</span> Son Town. Built for GitHub Pages.</p>
+      <p>&copy; 2026 Minhy eok Son. Built as a static GitHub Pages website.</p>
     </footer>
   </body>
 </html>
