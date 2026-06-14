@@ -1,7 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Personal website for Son Town with profile, work highlights, resume, and contact links."
+    />
+    <title>Son Town | Personal Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
   <body>
-    <h1>Welcome to my Personal Page</h1>
-    <p>Hosted on GitHub Pages!</p>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="logo" href="#top" aria-label="Son Town home">ST</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="intro-heading">
+        <div class="hero-content">
+          <p class="eyebrow">Personal website</p>
+          <h1 id="intro-heading">Hi, I am Son Town.</h1>
+          <p class="intro">
+            I build practical, human-centered digital work and use this space to
+            share projects, experience, and ways to get in touch.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="assets/cv.pdf">View CV</a>
+            <a class="button secondary" href="#contact">Contact me</a>
+          </div>
+        </div>
+        <figure class="profile-card">
+          <img
+            src="assets/profile.png"
+            alt="Portrait of Son Town"
+            width="640"
+            height="640"
+          />
+        </figure>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-heading">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2 id="about-heading">Focused on clear, useful work.</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            This site is a simple home base for my professional profile. It is
+            designed to load quickly, work well on phones and desktops, and be
+            easy to maintain through GitHub Pages.
+          </p>
+          <p>
+            Update this section with your background, interests, research,
+            teaching, engineering, design, or other work that best represents
+            you.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="work" aria-labelledby="work-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Work</p>
+          <h2 id="work-heading">Selected highlights</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project">
+            <h3>Project One</h3>
+            <p>
+              Briefly describe a project, publication, role, or initiative and
+              the outcome it created.
+            </p>
+          </article>
+          <article class="project">
+            <h3>Project Two</h3>
+            <p>
+              Add a second highlight that shows your skills, collaborators, or
+              the kind of problems you enjoy solving.
+            </p>
+          </article>
+          <article class="project">
+            <h3>Project Three</h3>
+            <p>
+              Use this space for a recent achievement, portfolio item, or area
+              of expertise.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section resume" id="resume" aria-labelledby="resume-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Resume</p>
+          <h2 id="resume-heading">Download my CV.</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            For education, experience, publications, and additional details,
+            view or download the full CV.
+          </p>
+          <a class="button primary" href="assets/cv.pdf">Open CV PDF</a>
+        </div>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="contact-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-heading">Let us connect.</h2>
+        </div>
+        <address class="contact-list">
+          <a href="mailto:hello@example.com">hello@example.com</a>
+          <a href="https://github.com/SonTown">GitHub</a>
+          <a href="https://www.linkedin.com/">LinkedIn</a>
+        </address>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year">2026</span> Son Town. Built for GitHub Pages.</p>
+    </footer>
   </body>
 </html>
