@@ -176,8 +176,8 @@ p {
 
 h1 {
   margin: 0;
-  max-width: 9ch;
-  font-size: clamp(4rem, 12vw, 8.5rem);
+  max-width: 12ch;
+  font-size: clamp(2.6rem, 7vw, 5.2rem);
   font-weight: 500;
   line-height: 1;
   letter-spacing: -0.02em;
@@ -185,7 +185,7 @@ h1 {
 
 h2 {
   margin: 0;
-  font-size: clamp(2.35rem, 6vw, 5rem);
+  font-size: clamp(2rem, 4.8vw, 3.8rem);
   font-weight: 500;
   line-height: 1;
   letter-spacing: -0.01em;
@@ -256,8 +256,7 @@ p {
 
 .profile-frame img {
   width: min(100%, 430px);
-  aspect-ratio: 1;
-  object-fit: cover;
+  height: auto;
   border-radius: 28px;
   border: 1px solid var(--hairline-dark);
 }
@@ -287,7 +286,7 @@ p {
 .section-content > p,
 .timeline-item p,
 .project-card p,
-.course-grid p,
+.course-group p,
 .ai-usage p {
   color: var(--mute);
 }
@@ -305,7 +304,7 @@ p {
 }
 
 .stats-grid > div,
-.course-grid article,
+.course-group,
 .timeline-item {
   border: 1px solid var(--hairline-light);
   border-radius: 20px;
@@ -334,7 +333,7 @@ p {
 }
 
 .project-grid,
-.course-grid {
+.course-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
@@ -384,8 +383,16 @@ p {
   background: var(--surface-soft);
 }
 
-.course-grid article {
+.course-group {
   background: var(--canvas-light);
+}
+
+.course-group ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 20px;
+  color: var(--mute);
 }
 
 .contact-list {
@@ -461,7 +468,7 @@ p {
 
   .stats-grid,
   .project-grid,
-  .course-grid {
+  .course-list {
     grid-template-columns: 1fr;
   }
 }
@@ -488,7 +495,7 @@ p {
 
   .project-card,
   .timeline-item,
-  .course-grid article,
+  .course-group,
   .ai-usage {
     padding: 24px;
   }
